@@ -1,0 +1,24 @@
+import { useEffect } from 'react'
+
+export function useReveal(deps: unknown[] = []) {
+  useEffect(() => {
+    const nodes = Array.from(document.querySelectorAll<HTMLElement>('.reveal:not(.is-in)'))
+    if (!nodes.length) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in')
+            observer.unobserve(entry.target)
+          }
+        }
+      },
+      { threshold: 0.16, rootMargin: '0px 0px -8% 0px' },
+    )
+
+    nodes.forEach((node) => observer.observe(node))
+    return () => observer.disconnect()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, deps)
+}
