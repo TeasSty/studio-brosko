@@ -66,22 +66,22 @@ export const projects: Project[] = [
 export const solutions = [
   {
     title: 'Свет',
-    image: asset('images/mediterranean-05.jpg'),
+    image: asset('images/solution-light.jpg'),
     caption: 'Светотехника и сценарии освещения',
   },
   {
     title: 'Отделка',
-    image: asset('images/mediterranean-01.jpg'),
+    image: asset('images/solution-finish.jpg'),
     caption: 'Образцы материалов в салоне',
   },
   {
     title: 'Текстиль',
-    image: asset('images/mediterranean-03.jpg'),
+    image: asset('images/solution-textile.jpg'),
     caption: 'Ткани, обивка, мягкие поверхности',
   },
   {
     title: 'Планировка',
-    image: asset('images/mediterranean-04.jpg'),
+    image: asset('images/solution-plan.jpg'),
     caption: 'Концепция, чертежи, документация',
   },
 ]
@@ -113,22 +113,22 @@ export const designers = [
   {
     name: 'Юлия Шадрина',
     role: 'Дизайнер интерьера',
-    image: asset('images/mediterranean-08.jpg'),
+    image: asset('images/designer-01.jpg'),
   },
   {
     name: 'Алёна Бертяева',
     role: 'Дизайнер интерьера',
-    image: asset('images/project-03.jpg'),
+    image: asset('images/designer-02.jpg'),
   },
   {
     name: 'Светлана Некрасова',
     role: 'Дизайнер интерьера',
-    image: asset('images/project-04.jpg'),
+    image: asset('images/designer-03.jpg'),
   },
   {
     name: 'Светлана Долгобородова',
     role: 'Дизайнер интерьера',
-    image: asset('images/project-01.jpg'),
+    image: asset('images/designer-04.jpg'),
   },
 ]
 
